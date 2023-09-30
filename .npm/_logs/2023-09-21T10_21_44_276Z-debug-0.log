@@ -1,0 +1,248 @@
+0 verbose cli /home/ec2-user/.nvm/versions/node/v16.20.2/bin/node /home/ec2-user/.nvm/versions/node/v16.20.2/bin/npm
+1 info using npm@9.8.1
+2 info using node@v16.20.2
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/home/ec2-user/.nvm/versions/node/v16.20.2/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/ec2-user/.npmrc Completed in 9ms
+11 timing config:load:user Completed in 9ms
+12 timing config:load:file:/home/ec2-user/.nvm/versions/node/v16.20.2/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 19ms
+16 timing npm:load:configload Completed in 19ms
+17 timing config:load:flatten Completed in 2ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm install prettier js-beautify
+21 verbose argv "install" "--global" "prettier" "js-beautify"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/ec2-user/.npm/_logs/2023-09-21T10_21_44_276Z-
+25 verbose logfile /home/ec2-user/.npm/_logs/2023-09-21T10_21_44_276Z-debug-0.log
+26 timing npm:load:logFile Completed in 7ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 48ms
+30 timing config:load:flatten Completed in 1ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 7ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest prettier@*
+37 http fetch GET 200 https://registry.npmjs.org/prettier 100ms (cache miss)
+38 silly fetch manifest js-beautify@*
+39 http fetch GET 200 https://registry.npmjs.org/js-beautify 28ms (cache miss)
+40 silly placeDep ROOT js-beautify@1.14.9 OK for:  want: *
+41 silly fetch manifest config-chain@^1.1.13
+42 silly fetch manifest editorconfig@^1.0.3
+43 silly fetch manifest glob@^8.1.0
+44 silly fetch manifest nopt@^6.0.0
+45 silly placeDep ROOT prettier@3.0.3 OK for:  want: *
+46 http fetch GET 200 https://registry.npmjs.org/config-chain 32ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/nopt 60ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/editorconfig 64ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/glob 67ms (cache miss)
+50 timing idealTree:#root Completed in 213ms
+51 silly placeDep node_modules/js-beautify config-chain@1.1.13 OK for: js-beautify@1.14.9 want: ^1.1.13
+52 silly fetch manifest proto-list@~1.2.1
+53 silly fetch manifest ini@^1.3.4
+54 silly placeDep node_modules/js-beautify editorconfig@1.0.4 OK for: js-beautify@1.14.9 want: ^1.0.3
+55 silly fetch manifest @one-ini/wasm@0.1.1
+56 silly fetch manifest commander@^10.0.0
+57 silly fetch manifest minimatch@9.0.1
+58 silly fetch manifest semver@^7.5.3
+59 silly placeDep node_modules/js-beautify glob@8.1.0 OK for: js-beautify@1.14.9 want: ^8.1.0
+60 silly fetch manifest fs.realpath@^1.0.0
+61 silly fetch manifest inflight@^1.0.4
+62 silly fetch manifest inherits@2
+63 silly fetch manifest minimatch@^5.0.1
+64 silly fetch manifest once@^1.3.0
+65 silly placeDep node_modules/js-beautify nopt@6.0.0 OK for: js-beautify@1.14.9 want: ^6.0.0
+66 silly fetch manifest abbrev@^1.0.0
+67 http fetch GET 200 https://registry.npmjs.org/proto-list 45ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/commander 44ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/ini 49ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/fs.realpath 85ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/inflight 85ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/inherits 84ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/once 84ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/@one-ini%2fwasm 91ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/abbrev 85ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/semver 101ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/minimatch 104ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/minimatch 101ms (cache miss)
+79 timing idealTree:node_modules/js-beautify Completed in 115ms
+80 timing idealTree:node_modules/prettier Completed in 0ms
+81 silly placeDep node_modules/js-beautify ini@1.3.8 OK for: config-chain@1.1.13 want: ^1.3.4
+82 silly placeDep node_modules/js-beautify proto-list@1.2.4 OK for: config-chain@1.1.13 want: ~1.2.1
+83 timing idealTree:node_modules/js-beautify/node_modules/config-chain Completed in 8ms
+84 silly placeDep node_modules/js-beautify @one-ini/wasm@0.1.1 OK for: editorconfig@1.0.4 want: 0.1.1
+85 silly placeDep node_modules/js-beautify commander@10.0.1 OK for: editorconfig@1.0.4 want: ^10.0.0
+86 silly placeDep node_modules/js-beautify minimatch@9.0.1 OK for: editorconfig@1.0.4 want: 9.0.1
+87 silly fetch manifest brace-expansion@^2.0.1
+88 silly placeDep node_modules/js-beautify semver@7.5.4 OK for: editorconfig@1.0.4 want: ^7.5.3
+89 silly fetch manifest lru-cache@^6.0.0
+90 http fetch GET 200 https://registry.npmjs.org/brace-expansion 36ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/lru-cache 32ms (cache miss)
+92 timing idealTree:node_modules/js-beautify/node_modules/editorconfig Completed in 48ms
+93 timing idealTree:node_modules/js-beautify/node_modules/@one-ini/wasm Completed in 0ms
+94 timing idealTree:node_modules/js-beautify/node_modules/commander Completed in 0ms
+95 silly placeDep node_modules/js-beautify fs.realpath@1.0.0 OK for: glob@8.1.0 want: ^1.0.0
+96 silly placeDep node_modules/js-beautify inflight@1.0.6 OK for: glob@8.1.0 want: ^1.0.4
+97 silly fetch manifest wrappy@1
+98 silly placeDep node_modules/js-beautify inherits@2.0.4 OK for: glob@8.1.0 want: 2
+99 silly placeDep node_modules/js-beautify/node_modules/glob minimatch@5.1.6 OK for: glob@8.1.0 want: ^5.0.1
+100 silly placeDep node_modules/js-beautify once@1.4.0 OK for: glob@8.1.0 want: ^1.3.0
+101 http fetch GET 200 https://registry.npmjs.org/wrappy 38ms (cache miss)
+102 timing idealTree:node_modules/js-beautify/node_modules/glob Completed in 47ms
+103 timing idealTree:node_modules/js-beautify/node_modules/fs.realpath Completed in 0ms
+104 silly placeDep node_modules/js-beautify wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+105 timing idealTree:node_modules/js-beautify/node_modules/inflight Completed in 1ms
+106 timing idealTree:node_modules/js-beautify/node_modules/inherits Completed in 0ms
+107 timing idealTree:node_modules/js-beautify/node_modules/ini Completed in 0ms
+108 silly placeDep node_modules/js-beautify brace-expansion@2.0.1 OK for: minimatch@9.0.1 want: ^2.0.1
+109 silly fetch manifest balanced-match@^1.0.0
+110 http fetch GET 200 https://registry.npmjs.org/balanced-match 23ms (cache miss)
+111 timing idealTree:node_modules/js-beautify/node_modules/minimatch Completed in 25ms
+112 silly placeDep node_modules/js-beautify balanced-match@1.0.2 OK for: brace-expansion@2.0.1 want: ^1.0.0
+113 timing idealTree:node_modules/js-beautify/node_modules/brace-expansion Completed in 1ms
+114 timing idealTree:node_modules/js-beautify/node_modules/balanced-match Completed in 0ms
+115 silly placeDep node_modules/js-beautify abbrev@1.1.1 OK for: nopt@6.0.0 want: ^1.0.0
+116 timing idealTree:node_modules/js-beautify/node_modules/nopt Completed in 1ms
+117 timing idealTree:node_modules/js-beautify/node_modules/abbrev Completed in 0ms
+118 timing idealTree:node_modules/js-beautify/node_modules/once Completed in 0ms
+119 timing idealTree:node_modules/js-beautify/node_modules/proto-list Completed in 0ms
+120 silly placeDep node_modules/js-beautify lru-cache@6.0.0 OK for: semver@7.5.4 want: ^6.0.0
+121 silly fetch manifest yallist@^4.0.0
+122 http fetch GET 200 https://registry.npmjs.org/yallist 28ms (cache miss)
+123 timing idealTree:node_modules/js-beautify/node_modules/semver Completed in 31ms
+124 silly placeDep node_modules/js-beautify yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+125 timing idealTree:node_modules/js-beautify/node_modules/lru-cache Completed in 1ms
+126 timing idealTree:node_modules/js-beautify/node_modules/wrappy Completed in 0ms
+127 timing idealTree:node_modules/js-beautify/node_modules/yallist Completed in 0ms
+128 timing idealTree:node_modules/js-beautify/node_modules/glob/node_modules/minimatch Completed in 0ms
+129 timing idealTree:buildDeps Completed in 492ms
+130 timing idealTree:fixDepFlags Completed in 1ms
+131 timing idealTree Completed in 505ms
+132 timing reify:loadTrees Completed in 506ms
+133 timing reify:diffTrees Completed in 2ms
+134 silly reify moves {}
+135 timing reify:retireShallow Completed in 1ms
+136 timing reify:createSparse Completed in 2ms
+137 timing reify:loadBundles Completed in 0ms
+138 silly tarball no local data for prettier@https://registry.npmjs.org/prettier/-/prettier-3.0.3.tgz. Extracting by manifest.
+139 silly tarball no local data for js-beautify@https://registry.npmjs.org/js-beautify/-/js-beautify-1.14.9.tgz. Extracting by manifest.
+140 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz. Extracting by manifest.
+141 silly tarball no local data for lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz. Extracting by manifest.
+142 silly tarball no local data for abbrev@https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz. Extracting by manifest.
+143 silly tarball no local data for balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+144 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz. Extracting by manifest.
+145 silly tarball no local data for wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz. Extracting by manifest.
+146 silly tarball no local data for once@https://registry.npmjs.org/once/-/once-1.4.0.tgz. Extracting by manifest.
+147 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+148 silly tarball no local data for inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz. Extracting by manifest.
+149 silly tarball no local data for fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz. Extracting by manifest.
+150 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.5.4.tgz. Extracting by manifest.
+151 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-9.0.1.tgz. Extracting by manifest.
+152 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-10.0.1.tgz. Extracting by manifest.
+153 silly tarball no local data for @one-ini/wasm@https://registry.npmjs.org/@one-ini/wasm/-/wasm-0.1.1.tgz. Extracting by manifest.
+154 silly tarball no local data for proto-list@https://registry.npmjs.org/proto-list/-/proto-list-1.2.4.tgz. Extracting by manifest.
+155 silly tarball no local data for ini@https://registry.npmjs.org/ini/-/ini-1.3.8.tgz. Extracting by manifest.
+156 silly tarball no local data for nopt@https://registry.npmjs.org/nopt/-/nopt-6.0.0.tgz. Extracting by manifest.
+157 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-8.1.0.tgz. Extracting by manifest.
+158 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-5.1.6.tgz. Extracting by manifest.
+159 silly tarball no local data for editorconfig@https://registry.npmjs.org/editorconfig/-/editorconfig-1.0.4.tgz. Extracting by manifest.
+160 silly tarball no local data for config-chain@https://registry.npmjs.org/config-chain/-/config-chain-1.1.13.tgz. Extracting by manifest.
+161 http fetch GET 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 206ms (cache miss)
+162 timing reifyNode:node_modules/js-beautify/node_modules/inflight Completed in 230ms
+163 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 213ms (cache miss)
+164 timing reifyNode:node_modules/js-beautify/node_modules/inherits Completed in 236ms
+165 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz 220ms (cache miss)
+166 timing reifyNode:node_modules/js-beautify/node_modules/yallist Completed in 238ms
+167 http fetch GET 200 https://registry.npmjs.org/nopt/-/nopt-6.0.0.tgz 207ms (cache miss)
+168 timing reifyNode:node_modules/js-beautify/node_modules/nopt Completed in 238ms
+169 http fetch GET 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz 219ms (cache miss)
+170 timing reifyNode:node_modules/js-beautify/node_modules/once Completed in 242ms
+171 http fetch GET 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 221ms (cache miss)
+172 timing reifyNode:node_modules/js-beautify/node_modules/wrappy Completed in 243ms
+173 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-5.1.6.tgz 210ms (cache miss)
+174 timing reifyNode:node_modules/js-beautify/node_modules/glob/node_modules/minimatch Completed in 243ms
+175 http fetch GET 200 https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz 225ms (cache miss)
+176 timing reifyNode:node_modules/js-beautify/node_modules/abbrev Completed in 245ms
+177 http fetch GET 200 https://registry.npmjs.org/proto-list/-/proto-list-1.2.4.tgz 215ms (cache miss)
+178 timing reifyNode:node_modules/js-beautify/node_modules/proto-list Completed in 244ms
+179 http fetch GET 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 227ms (cache miss)
+180 timing reifyNode:node_modules/js-beautify/node_modules/balanced-match Completed in 247ms
+181 http fetch GET 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz 227ms (cache miss)
+182 timing reifyNode:node_modules/js-beautify/node_modules/brace-expansion Completed in 248ms
+183 http fetch GET 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 223ms (cache miss)
+184 timing reifyNode:node_modules/js-beautify/node_modules/fs.realpath Completed in 247ms
+185 http fetch GET 200 https://registry.npmjs.org/config-chain/-/config-chain-1.1.13.tgz 214ms (cache miss)
+186 timing reifyNode:node_modules/js-beautify/node_modules/config-chain Completed in 248ms
+187 http fetch GET 200 https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz 231ms (cache miss)
+188 timing reifyNode:node_modules/js-beautify/node_modules/lru-cache Completed in 250ms
+189 http fetch GET 200 https://registry.npmjs.org/ini/-/ini-1.3.8.tgz 219ms (cache miss)
+190 timing reifyNode:node_modules/js-beautify/node_modules/ini Completed in 250ms
+191 http fetch GET 200 https://registry.npmjs.org/@one-ini/wasm/-/wasm-0.1.1.tgz 230ms (cache miss)
+192 timing reifyNode:node_modules/js-beautify/node_modules/@one-ini/wasm Completed in 258ms
+193 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-8.1.0.tgz 228ms (cache miss)
+194 timing reifyNode:node_modules/js-beautify/node_modules/glob Completed in 260ms
+195 http fetch GET 200 https://registry.npmjs.org/editorconfig/-/editorconfig-1.0.4.tgz 230ms (cache miss)
+196 timing reifyNode:node_modules/js-beautify/node_modules/editorconfig Completed in 263ms
+197 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-10.0.1.tgz 263ms (cache miss)
+198 timing reifyNode:node_modules/js-beautify/node_modules/commander Completed in 290ms
+199 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.5.4.tgz 289ms (cache miss)
+200 timing reifyNode:node_modules/js-beautify/node_modules/semver Completed in 315ms
+201 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-9.0.1.tgz 305ms (cache miss)
+202 timing reifyNode:node_modules/js-beautify/node_modules/minimatch Completed in 332ms
+203 http fetch GET 200 https://registry.npmjs.org/js-beautify/-/js-beautify-1.14.9.tgz 328ms (cache miss)
+204 timing reifyNode:node_modules/js-beautify Completed in 346ms
+205 http fetch GET 200 https://registry.npmjs.org/prettier/-/prettier-3.0.3.tgz 403ms (cache miss)
+206 timing reifyNode:node_modules/prettier Completed in 419ms
+207 timing reify:unpack Completed in 419ms
+208 timing reify:unretire Completed in 0ms
+209 timing build:queue Completed in 1ms
+210 timing build:link:node_modules/js-beautify/node_modules/editorconfig Completed in 3ms
+211 timing build:link:node_modules/js-beautify Completed in 3ms
+212 timing build:link:node_modules/prettier Completed in 3ms
+213 timing build:link:node_modules/js-beautify/node_modules/nopt Completed in 2ms
+214 timing build:link:node_modules/js-beautify/node_modules/semver Completed in 2ms
+215 timing build:link Completed in 3ms
+216 timing build:deps Completed in 5ms
+217 timing build Completed in 5ms
+218 timing reify:build Completed in 6ms
+219 timing reify:trash Completed in 0ms
+220 timing reify Completed in 946ms
+221 silly ADD node_modules/prettier
+222 silly ADD node_modules/js-beautify
+223 silly ADD node_modules/js-beautify/node_modules/yallist
+224 silly ADD node_modules/js-beautify/node_modules/lru-cache
+225 silly ADD node_modules/js-beautify/node_modules/abbrev
+226 silly ADD node_modules/js-beautify/node_modules/balanced-match
+227 silly ADD node_modules/js-beautify/node_modules/brace-expansion
+228 silly ADD node_modules/js-beautify/node_modules/wrappy
+229 silly ADD node_modules/js-beautify/node_modules/once
+230 silly ADD node_modules/js-beautify/node_modules/inherits
+231 silly ADD node_modules/js-beautify/node_modules/inflight
+232 silly ADD node_modules/js-beautify/node_modules/fs.realpath
+233 silly ADD node_modules/js-beautify/node_modules/semver
+234 silly ADD node_modules/js-beautify/node_modules/minimatch
+235 silly ADD node_modules/js-beautify/node_modules/commander
+236 silly ADD node_modules/js-beautify/node_modules/@one-ini/wasm
+237 silly ADD node_modules/js-beautify/node_modules/proto-list
+238 silly ADD node_modules/js-beautify/node_modules/ini
+239 silly ADD node_modules/js-beautify/node_modules/nopt
+240 silly ADD node_modules/js-beautify/node_modules/glob
+241 silly ADD node_modules/js-beautify/node_modules/glob/node_modules/minimatch
+242 silly ADD node_modules/js-beautify/node_modules/editorconfig
+243 silly ADD node_modules/js-beautify/node_modules/config-chain
+244 timing command:install Completed in 952ms
+245 verbose exit 0
+246 timing npm Completed in 1175ms
+247 info ok
