@@ -57,3 +57,19 @@ git branch -M main
 git remote add origin git@github.com:shoootaro/newsproject.git
 git push -u origin main
 git add -a
+git add -A
+git commit -m "first commit"
+git status
+git push -u origin master
+git push -u origin main
+python manage.py runserver $IP:$PORT
+ls
+pwd
+cd environment/
+ls
+python manage.py runserver $IP:$PORT
+ls
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver $IP:$PORT
+git add .
